@@ -1,15 +1,15 @@
 ## Voraussetzungen:
 
 - Webserver (Apache oder Nginx) inkl. notwendiger Module
-- MySQL (MariaDB) inkl. User mit "Grant Option" und "All Privileges"
-- [https://www.adminer.org](adminer) eingerichtet
+- MySQL (MariaDB) inkl. User mit _Grant Option_ und _All Privileges_
+- [adminer](https://www.adminer.org) eingerichtet
 - Datenbank angelegt
 - Domain angelegt mit https (inkl. SSL-Zertifikat)
-- devenv (und optional, aber empfohlen direnv)
+- [devenv](https://devenv.sh/) (und optional, aber empfohlen [direnv](https://direnv.net/))
 - node und ein Node-Version-Manager (nvm, n)
 - PHP mit benötigten Extensions
 - git
-- ssh-Zugang zum Repository (ggf. ssh-Key erzeugen und hinterlegen(lassen))
+- ssh-Zugang zum Repository (ggf. ssh-Key erzeugen und hinterlegen(lassen))  
 
 Das sind Grundlagen, die jeder beherrschen sollte.
 
@@ -17,25 +17,27 @@ Das sind Grundlagen, die jeder beherrschen sollte.
 
 ### Einrichtung des Projekts:
 
-    • DB-Dump von live-DB erzeugen und importieren
+DB-Dump von live-DB erzeugen und importieren
 
-        ◦ mysqldump OPTIONEN -h'HOST' -u'USER' -p DB
-        ◦ diese Optionen setzen!
-            ▪ --skip-lock-tables
-            ▪ --insert-ignore
-            ▪ --hex-blob
-            ▪ --no-tablespaces
-            ▪ --single-transaction
-            ▪ --quick
-            ▪ --opt
+    
+    ``mysqldump OPTIONEN -h'HOST' -u'USER' -p DB``
 
-        ◦ wahlweise steht shopware-cli (zum Beispiel auf MaxCluster) zur Verfügung
-        ◦ shopware-cli project dump DBNAME --username DBUSER --password PASSWORD
-        ◦ diese Optionen setzen!
-            ▪ --clean
-            ▪ --anonymize
-            ▪ --skip-lock-tables
-            ▪ 
+    - diese Optionen setzen!
+        ▪ --skip-lock-tables
+        ▪ --insert-ignore
+        ▪ --hex-blob
+        ▪ --no-tablespaces
+        ▪ --single-transaction
+        ▪ --quick
+        ▪ --opt
+
+◦ wahlweise steht shopware-cli (zum Beispiel auf MaxCluster) zur Verfügung
+◦ shopware-cli project dump DBNAME --username DBUSER --password PASSWORD
+◦ diese Optionen setzen!
+    ▪ --clean
+    ▪ --anonymize
+    ▪ --skip-lock-tables
+    ▪ 
           
     • Lokaler Import des Datenbank-Dumps (via Terminal)
 
