@@ -13,7 +13,7 @@
 
 Das sind Grundlagen, die jeder beherrschen sollte.
 
-[neues Projekt](new_project.md)
+[neues Projekt](new_project.md)  
 [bestehendes Projekt](existing_project.md)
 
 ---
