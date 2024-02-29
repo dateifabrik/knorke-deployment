@@ -1,4 +1,4 @@
-##Voraussetzungen:
+## Voraussetzungen:
 
     • Webserver (Apache oder Nginx) inkl. notwendiger Module
     • MySQL (MariaDB) inkl. User mit „Grant Option“ und „All Privileges“
@@ -13,9 +13,9 @@
 
 Das sind Grundlagen, die jeder beherrschen sollte.
 
-##Ausgangslage: neues Projekt
+## Ausgangslage: neues Projekt
 
-###Einrichtung des Projekts:
+### Einrichtung des Projekts:
 
     • DB-Dump von live-DB erzeugen und importieren
 
@@ -59,6 +59,9 @@ Das sind Grundlagen, die jeder beherrschen sollte.
         ◦ alles in config/jwt (ausser .gitignore)
     • auth.json von live kopieren
     • config/jwt nach lokal kopieren
+
+
+---
 
 TERRA AUSTRALIA
 	
