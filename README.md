@@ -1,5 +1,9 @@
 ## Voraussetzungen:
 
+Die Grundlagen, die jeder daran arbeitende beherrschen sollte...
+
+### Installiert, konfiguriert
+
 - Webserver (Apache oder Nginx) inkl. notwendiger Module
 - MySQL (MariaDB) inkl. User mit _Grant Option_ und _All Privileges_
 - [adminer](https://www.adminer.org) eingerichtet
@@ -11,18 +15,16 @@
 - git
 - ssh-Zugang zum Repository (ggf. ssh-Key erzeugen und hinterlegen(lassen))  
 
-Das sind Grundlagen, die jeder beherrschen sollte.
+---
 
-[neues Projekt](new_project.md)  
-[bestehendes Projekt](existing_project.md)
+## Workflows
+
+- [neues Projekt](new_project.md)  
+- [bestehendes Projekt](existing_project.md)
 
 ---
 
-TERRA AUSTRALIA
-	
+add
 
-
-
-Ausgangslage: Projekt bereits vorhanden
-
-Sonderfälle Varnish/Redis...
+- TERRA AUSTRALIA
+- Sonderfälle Varnish/Redis...
