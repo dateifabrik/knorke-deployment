@@ -15,10 +15,11 @@ Das sind Grundlagen, die jeder beherrschen sollte.
 
 ## Ausgangslage: neues Projekt
 
+[neues Projekt](setup_new_project.md#zwei)
+
 ### Einrichtung des Projekts:
 
 DB-Dump von live-DB erzeugen und importieren
-
     
     mysqldump OPTIONEN -h'HOST' -u'USER' -p DB
     // **diese Optionen setzen!**
@@ -30,22 +31,26 @@ DB-Dump von live-DB erzeugen und importieren
     --quick
     --opt
 
-◦ wahlweise steht shopware-cli (zum Beispiel auf MaxCluster) zur Verfügung
-◦ shopware-cli project dump DBNAME --username DBUSER --password PASSWORD
-◦ diese Optionen setzen!
-    ▪ --clean
-    ▪ --anonymize
-    ▪ --skip-lock-tables
-    ▪ 
-          
-    • Lokaler Import des Datenbank-Dumps (via Terminal)
+    // wahlweise steht shopware-cli (zum Beispiel auf MaxCluster) zur Verfügung
+    shopware-cli project dump DBNAME --username DBUSER --password PASSWORD
+    // **diese Optionen setzen!**
+    --clean
+    --anonymize
+    --skip-lock-tables
 
-        ◦ ggf. definer aus sql-Datei entfernen, z.B. mit sed
-        ◦ importierender USER muss über entsprechende Rechte verfügen (siehe oben Voraussetzungen lokal)
-        ◦ sql-Dateien:
-            ▪ mysql -h'HOST' -u'USER' -p DB
-        ◦ sql.gz-Dateien:
-            ▪ gunzip < PATH/TO/DB_BACKUP_NAME .sql.gz | mysql -h'HOST' -u'USER' -p DB
+Import des Datenbank-Dumps
+
+- ggf. definer aus sql-Datei entfernen, z.B. mit nano oder mit [sed](https://wiki.ubuntuusers.de/sed/)
+- importierender USER muss über entsprechende Rechte verfügen (siehe oben Voraussetzungen lokal)
+
+ (via Terminal)
+
+    mysql -h'HOST' -u'USER' -p DB  // sql-Dateien  
+    gunzip < PATH/TO/DB_BACKUP_NAME .sql.gz | mysql -h'HOST' -u'USER' -p DB // sql.gz-Dateien
+
+
+
+
 
     • Repository klonen
     • in geklontes Verzeichnis wechseln (Verzeichnis = lokale Domain mit https)
