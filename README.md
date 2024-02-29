@@ -21,9 +21,7 @@ DB-Dump von live-DB erzeugen und importieren
 
     
     mysqldump OPTIONEN -h'HOST' -u'USER' -p DB
-
-**diese Optionen setzen!**
-
+    // **diese Optionen setzen!**
     --skip-lock-tables
     --insert-ignore
     --hex-blob
