@@ -20,16 +20,17 @@ Das sind Grundlagen, die jeder beherrschen sollte.
 DB-Dump von live-DB erzeugen und importieren
 
     
-    ``mysqldump OPTIONEN -h'HOST' -u'USER' -p DB``
+    mysqldump OPTIONEN -h'HOST' -u'USER' -p DB
 
-    - diese Optionen setzen!
-        ▪ --skip-lock-tables
-        ▪ --insert-ignore
-        ▪ --hex-blob
-        ▪ --no-tablespaces
-        ▪ --single-transaction
-        ▪ --quick
-        ▪ --opt
+**diese Optionen setzen!**
+
+    --skip-lock-tables
+    --insert-ignore
+    --hex-blob
+    --no-tablespaces
+    --single-transaction
+    --quick
+    --opt
 
 ◦ wahlweise steht shopware-cli (zum Beispiel auf MaxCluster) zur Verfügung
 ◦ shopware-cli project dump DBNAME --username DBUSER --password PASSWORD
