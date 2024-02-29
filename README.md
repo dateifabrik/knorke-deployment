@@ -10,7 +10,7 @@ Die Grundlagen, die jeder daran arbeitende beherrschen sollte...
 - Datenbank angelegt
 - Domain angelegt mit https (inkl. SSL-Zertifikat)
 - [devenv](https://devenv.sh/) (und optional, aber empfohlen [direnv](https://direnv.net/))
-- node und ein Node-Version-Manager (nvm, n)
+- node und ein Node-Version-Manager (nvm / [n](https://github.com/tj/n))
 - PHP mit benötigten Extensions
 - git
 - ssh-Zugang zum Repository (ggf. ssh-Key erzeugen und hinterlegen(lassen))  
