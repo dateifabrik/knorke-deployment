@@ -1,15 +1,15 @@
 ## Voraussetzungen:
 
-    • Webserver (Apache oder Nginx) inkl. notwendiger Module
-    • MySQL (MariaDB) inkl. User mit „Grant Option“ und „All Privileges“
-    • adminer eingerichtet
-    • Datenbank angelegt
-    • Domain angelegt mit https (inkl. SSL-Zertifikat)
-    • devenv (und optional, aber empfohlen direnv)
-    • node und ein Node-Version-Manager (nvm, n)
-    • PHP mit benötigten Extensions
-    • git
-    • ssh-Zugang zum Repository (ggf. ssh-Key erzeugen und hinterlegen(lassen))
+- Webserver (Apache oder Nginx) inkl. notwendiger Module
+- MySQL (MariaDB) inkl. User mit "Grant Option" und "All Privileges"
+- [https://www.adminer.org](adminer) eingerichtet
+- Datenbank angelegt
+- Domain angelegt mit https (inkl. SSL-Zertifikat)
+- devenv (und optional, aber empfohlen direnv)
+- node und ein Node-Version-Manager (nvm, n)
+- PHP mit benötigten Extensions
+- git
+- ssh-Zugang zum Repository (ggf. ssh-Key erzeugen und hinterlegen(lassen))
 
 Das sind Grundlagen, die jeder beherrschen sollte.
 
